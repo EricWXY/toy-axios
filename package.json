@@ -6,7 +6,7 @@
     "index.d.ts"
   ],
   "main": "./dist/toy-axios.umd.cjs",
-  "module": "./dist/toy-axios.js",
+  "module": "./dist/toy-axios.mjs",
   "types": "./index.d.ts",
   "exports": {
     "types": "./index.d.ts",
