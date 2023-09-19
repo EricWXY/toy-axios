@@ -5,13 +5,13 @@
     "dist",
     "index.d.ts"
   ],
-  "main": "./dist/toy-axios.umd.cjs",
+  "main": "./dist/toy-axios.umd.js",
   "module": "./dist/toy-axios.mjs",
   "types": "./index.d.ts",
   "exports": {
     "types": "./index.d.ts",
-    "import": "./dist/toy-axios.js",
-    "require": "./dist/toy-axios.umd.cjs"
+    "import": "./dist/toy-axios.mjs",
+    "require": "./dist/toy-axios.umd.js"
   },
   "scripts": {
     "dev": "vite serve example",
