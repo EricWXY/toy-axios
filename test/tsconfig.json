@@ -7,7 +7,9 @@
     "skipLibCheck": true,
 
     /* Bundler mode */
+    "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
 
@@ -18,19 +20,9 @@
     "noFallthroughCasesInSwitch": true,
     "noImplicitAny": false,
 
-    "sourceMap": true,
-    "declaration": true,
-    "allowSyntheticDefaultImports": true,
-    "experimentalDecorators": true,
-    "emitDecoratorMetadata": true,
-    "declarationDir": "dist/types",
-    "outDir": "dist/lib",
-    "typeRoots": ["node_modules/@types"],
-
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./lib/*"]
+      "@/*": ["../lib/*"]
     }
-  },
-  "include": ["lib"]
+  }
 }

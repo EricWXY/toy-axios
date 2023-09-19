@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lib example</title>
+  </head>
+  <body>
+    <h1>toy-axios examples</h1>
+    <ul>
+      <li><button id="getBtn">GET</button></li>
+      <li><button id="postBtn">POST</button></li>
+    </ul>
+  </body>
+
+  <script type="module">
+    import { setupWorker, RequestHandler, rest } from 'msw'
+    import axios from '@/axios'
+
+    const handlers = [
+      rest.get('/bar', (_, res, ctx) => res(ctx.json([{ name: 'eric' }]))),
+      rest.post('/foo', (_, res, ctx) => res(ctx.status(200)))
+    ]
+
+    const worker = setupWorker(...handlers)
+    worker.start()
+
+    const getBtn = document.getElementById('getBtn')
+    getBtn?.addEventListener('click', () => {
+      axios.get('/bar').then(res => {
+        console.log(res)
+      })
+    })
+
+    const postBtn = document.getElementById('postBtn')
+    postBtn?.addEventListener('click', () => {
+      axios.post('/foo').then(res => {
+        console.log(res)
+      })
+    })
+  </script>
+</html>
