@@ -3,7 +3,8 @@
   "version": "0.0.3",
   "files": [
     "dist",
-    "index.d.ts"
+    "index.d.ts",
+    "README.md"
   ],
   "main": "./dist/toy-axios.umd.js",
   "module": "./dist/toy-axios.mjs",
