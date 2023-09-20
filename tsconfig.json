@@ -5,6 +5,7 @@
     "module": "es2015",
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "skipLibCheck": true,
+    "moduleResolution": "node",
 
     /* Bundler mode */
     "allowImportingTsExtensions": true,
