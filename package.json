@@ -1,6 +1,6 @@
 {
   "name": "toy-axios",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "files": [
     "dist",
     "index.d.ts",
